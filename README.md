@@ -1,77 +1,32 @@
- # Object Detection App
-This project demonstrates object detection using YOLO (You Only Look Once) on both images and videos. It is built using Streamlit for the front end and OpenCV for the computer vision tasks.
-<br>
-Features
-Object Detection on Images: Upload an image and the app will detect objects, drawing bounding boxes around them.
-Object Detection on Videos: Upload a video and the app will process it, highlighting detected objects in each frame.
-Real-Time Object Detection: Perform real-time object detection using your webcam.
-Confidence and Threshold Adjustment: Adjust the confidence and threshold settings for more precise object detection.
-<br>
-Installation
-Clone the repository:
+# Object Detection using OpenCV
 
-bash
-Copy code
-git clone https://github.com/your-username/object-detection-app.git
-cd object-detection-app
-Install the required packages:
+This project demonstrates how to use the YOLOv3 model for object detection with OpenCV's Deep Neural Network (DNN) module.
 
-Make sure you have Python 3.x installed. Then install the required packages using:
+## Prerequisites
 
-bash
-Copy code
-pip install -r requirements.txt
-Download YOLOv3 Weights and Config files:
-<br>
-You need to download the YOLOv3 weights and config files to run the app. You can do this by running:
+Before you begin, ensure you have the following software installed:
 
-python
-Copy code
-python download_yolo_files.py
-Or manually download and place them in the project directory.
-<br>
-Usage
-Run the Streamlit app:
+- Python 3.x
+- pip (Python package installer)
+- OpenCV (Python bindings) installed with `pip install opencv-python`
+- Numpy installed with `pip install numpy`
 
-bash
-Copy code
-streamlit run app.py
-Select Activity:
+## Downloading YOLOv3 Files
 
-Object Detection (Image): Upload an image for object detection.
-Object Detection (Video): Upload a video for object detection.
-Real-Time Object Detection: Perform object detection in real-time using your webcam.
-View and Adjust Results:
+You need to download the following files for YOLOv3:
 
-After processing, view the detected objects and their confidence levels.
-Adjust the confidence and threshold sliders for different detection results.
-Model Details
-The app uses the following models for object detection:
+1. **yolov3.cfg**: [Download here](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
+2. **yolov3.weights**: [Download here](https://pjreddie.com/media/files/yolov3.weights)
 
-YOLOv3: Used for detecting objects in images and videos. It is pre-trained on the COCO dataset, which includes 80 different classes.
-MobileNetSSD: Used for real-time object detection with webcam feed.
-<br>
-Example Usage
-Upload a sample image or video, and the app will detect objects, display bounding boxes, and list the objects detected with confidence levels.
-For real-time detection, simply enable your webcam and see the objects detected live.
-<br>
-Requirements
-Python 3.x
-Streamlit
-OpenCV
-MoviePy
-NumPy
-Matplotlib
-Pandas
-aiortc
-Other Python packages (listed in requirements.txt)
+Save these files in the project directory.
 
-<br>
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## Project Setup
 
-Acknowledgments
-Streamlit
-OpenCV
-YOLO
-MobileNetSSD
+1. Clone the repository or download the project files.
+
+2. Install the required Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+
+ 3. Before running the streamlit file move to codes folder to run the file.
